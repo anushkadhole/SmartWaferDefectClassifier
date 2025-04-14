@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 from PIL import Image
 
-st.title("🧠 Smart Wafer Defect Classifier")
+st.title("Smart Wafer Defect Classifier")
 st.write("Upload an image of a wafer to classify if it's defective or normal.")
 
 uploaded_file = st.file_uploader("Upload Image", type=["jpg", "png", "jpeg"])
@@ -19,4 +19,4 @@ if uploaded_file is not None:
     prediction = mock_predict(image_array)
     
     st.subheader("Prediction:")
-    st.write(f"🔍 The wafer is **{prediction}**")
+    st.write(f"The wafer is **{prediction}**")
